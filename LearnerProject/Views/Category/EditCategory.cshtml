@@ -1,0 +1,22 @@
+﻿@model LearnerProject.Models.Entities.Category
+@{
+    ViewBag.Title = "EditCategory";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div style="margin-left:35%;margin-top:8%;">
+    <br /><br /><br />
+    <h4>Kategori Düzenleme Sayfası</h4>
+    <form method="post" class="col-xl-5 col-md-5 table-bordered" style="height:180px;">
+        @Html.HiddenFor(x => x.CategoryID, new { @class = "form-control", style = "visibility:hidden" })
+        <br />
+        <b>@Html.Label("Kategori Adı")</b>
+        @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+        <br />
+        <b>@Html.Label("Kategori Icon")</b>
+        @Html.TextBoxFor(x => x.CategoryIcon, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-outline-success">Güncelle</button>
+    </form>
+</div>
+
