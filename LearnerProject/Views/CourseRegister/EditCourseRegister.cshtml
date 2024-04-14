@@ -1,0 +1,22 @@
+﻿@model LearnerProject.Models.Entities.CourseRegister
+@{
+    ViewBag.Title = "EditCourseRegister";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div style="margin-left:35%;margin-top:8%;">
+    <br /><br /><br />
+    <h4>Kategori Ekleme Sayfası</h4>
+    <form method="post" class="col-xl-5 col-md-5 table-bordered" style="height:180px;">
+        <br />
+        @Html.HiddenFor(x=> x.CourseRegisterID)
+        <b>@Html.Label("Öğrenci Adı")</b>
+        @Html.DropDownListFor(x => x.StudentID, (List<SelectListItem>)@ViewBag.student, "Öğrenci Seçiniz", new { @class = "form-control", @style = "background-color:black" })
+        <br />
+        <b>@Html.Label("Kurs Adı")</b>
+        @Html.DropDownListFor(x => x.CourseID, (List<SelectListItem>)@ViewBag.course, "Kurs Seçiniz", new { @class = "form-control", @style = "background-color:black" })
+        <br />
+        <button class="btn btn-outline-success">Kaydet</button>
+    </form>
+</div>
+

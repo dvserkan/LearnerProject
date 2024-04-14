@@ -1,0 +1,33 @@
+﻿@model LearnerProject.Models.Entities.Course
+@{
+    ViewBag.Title = "EditCourse";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div style="margin-left:35%;margin-top:8%;">
+    <br /><br /><br />
+    <h4>Kurs Düzenleme Sayfası</h4>
+    <form method="post" class="col-xl-5 col-md-5 table-bordered" style="height:180px;">
+        <br />
+        @Html.HiddenFor(x=> x.CourseID)
+        <b>@Html.Label("Kurs Adı")</b>
+        @Html.TextBoxFor(x => x.CourseName, new { @class = "form-control" })
+        <br />
+        <b>@Html.Label("Resim Url")</b>
+        @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+        <br />
+        <b>@Html.Label("Açıklama")</b>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+        <br />
+        <b>@Html.Label("Tutar")</b>
+        @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+        <br />
+        <b>@Html.Label("Kategori")</b>
+        @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>
+    )ViewBag.category, "Kategori Seçiniz", new { @class = "form-control" ,@style= "background-color:black" })
+    <br />
+    <button class="btn btn-outline-success">Güncelle</button>
+</form>
+</div>
+
+

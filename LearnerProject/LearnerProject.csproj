@@ -127,9 +127,15 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\BannerController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ClassroomController.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\CourseRegisterController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\FaqController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UILayoutController.cs" />
     <Compile Include="Global.asax.cs">
@@ -481,6 +487,22 @@
     <Content Include="Templates\learner-1.0.0\scss\_variables.scss" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\UILayout\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\About\AddAbout.cshtml" />
+    <Content Include="Views\About\EditAbout.cshtml" />
+    <Content Include="Views\Banner\Index.cshtml" />
+    <Content Include="Views\Banner\AddBanner.cshtml" />
+    <Content Include="Views\Banner\EditBanner.cshtml" />
+    <Content Include="Views\Classroom\Index.cshtml" />
+    <Content Include="Views\Classroom\AddClassroom.cshtml" />
+    <Content Include="Views\Classroom\EditClassroom.cshtml" />
+    <Content Include="Views\Course\Index.cshtml" />
+    <Content Include="Views\Course\AddCourse.cshtml" />
+    <Content Include="Views\Course\EditCourse.cshtml" />
+    <Content Include="Views\CourseRegister\Index.cshtml" />
+    <Content Include="Views\CourseRegister\AddCourseRegister.cshtml" />
+    <Content Include="Views\CourseRegister\EditCourseRegister.cshtml" />
+    <Content Include="Views\Faq\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

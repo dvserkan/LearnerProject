@@ -1,0 +1,35 @@
+﻿@model LearnerProject.Models.Entities.About
+@{
+    ViewBag.Title = "EditAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div style="margin-left:35%;margin-top:8%;">
+    <br /><br /><br />
+    <h4>Hakkında Düzenleme Sayfası</h4>
+    <form method="post" class="col-xl-5 col-md-5 table-bordered" style="height:180px;">
+        <br />
+        @Html.HiddenFor(x=> x.AboutID)
+        <b>@Html.Label("Başlık Adı")</b>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+        <b>@Html.Label("Açıklama")</b>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+        <br />
+        <b>@Html.Label("Resim Url")</b>
+        @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+        <br />
+        <b>@Html.Label("Item 1")</b>
+        @Html.TextBoxFor(x => x.Item1, new { @class = "form-control" })
+        <br />
+        <b>@Html.Label("Item 2")</b>
+        @Html.TextBoxFor(x => x.Item2, new { @class = "form-control" })
+        <br />
+        <b>@Html.Label("Item 3")</b>
+        @Html.TextBoxFor(x => x.Item3, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-outline-success">Güncelle</button>
+    </form>
+</div>
+
+
